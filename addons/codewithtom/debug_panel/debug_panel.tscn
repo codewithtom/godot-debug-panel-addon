@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw5ac1ob45ifs"]
+
+[ext_resource type="Script" path="res://addons/codewithtom/debug_panel/debug_panel.gd" id="1_yh8ff"]
+[ext_resource type="Theme" uid="uid://c1uffrbh3r847" path="res://addons/codewithtom/debug_panel/debug_panel_theme.tres" id="2_dkou1"]
+
+[node name="DebugPanel" type="CanvasLayer"]
+layer = 128
+script = ExtResource("1_yh8ff")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("2_dkou1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(500, 2.08165e-12)
+layout_mode = 2
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 510.0
+offset_bottom = 380.0
+theme_override_constants/separation = 10

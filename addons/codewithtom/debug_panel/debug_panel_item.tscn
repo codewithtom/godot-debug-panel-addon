@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://cj5t0pjk23p1"]
+
+[ext_resource type="Script" path="res://addons/codewithtom/debug_panel/debug_panel_item.gd" id="1_uc112"]
+
+[node name="DebugPanelItem" type="PanelContainer"]
+custom_minimum_size = Vector2(500, 2.08165e-12)
+script = ExtResource("1_uc112")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+bbcode_enabled = true
+text = "[b]Hello[/b]
+World"
+fit_content = true
